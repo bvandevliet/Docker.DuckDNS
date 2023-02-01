@@ -1,9 +1,9 @@
 #!/bin/sh
 
-RESPONSE=$(curl -k -sS --max-time 60 "https://www.duckdns.org/update?domains=${SUBDOMAINS}&token=${TOKEN}&ip=")
+RESPONSE=$(curl -k -sS --max-time 30 "https://www.duckdns.org/update?domains=${DOMAINS}&token=${TOKEN}&ip=")
 
-if [ "${RESPONSE}" = "OK" ]; then
-  echo -e "$(date):\nThe response returned was: ${RESPONSE}.\nIP updated."
+if [ ${RESPONSE} = "OK" ]; then
+  echo -e "\n$(date): Domain(s) ${DOMAINS} updated."
 else
-  echo -e "$(date):\nThe response returned was: ${RESPONSE}.\nSomething went wrong!"
+  echo -e "\n$(date): Something went wrong! DuckDNS responded: ${RESPONSE}"
 fi

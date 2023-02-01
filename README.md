@@ -25,7 +25,7 @@ services:
     restart: unless-stopped
     environment:
       - TZ=Europe/Amsterdam
-      - SUBDOMAINS=domain
+      - DOMAINS=domain
       - TOKEN=xxx-xxx-xxx-xxx-xxx
 ```
 
