@@ -1,6 +1,8 @@
 FROM alpine:latest
 
-RUN apk add --no-cache curl
+RUN apk add -U --no-cache \
+    tzdata \
+    curl
 
 COPY root/ /
 
