@@ -1,1 +1,1 @@
-*/5 * * * * sleep $((0 + $RANDOM % 120)); /app/duck.sh
+4-59/5 * * * * sleep $((0 + $RANDOM % 120)); /app/duck.sh
