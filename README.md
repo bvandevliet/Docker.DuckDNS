@@ -2,7 +2,6 @@
 
 A cronjob that runs every 5 minutes to keep your public IP address up-to-date with [DuckDNS](https://www.duckdns.org/).  
 
-**GitHub**: https://github.com/bvandevliet/DuckDNS  
 **DockerHub**: https://hub.docker.com/r/bvandevliet/duckdns  
 
 ## Install
