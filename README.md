@@ -12,8 +12,6 @@ A cronjob that runs every 5 minutes to keep your public IP address up-to-date wi
 ```
 # docker-compose.yml
 
-version: '3.6'
-
 services:
   duckdns:
     container_name: duckdns
